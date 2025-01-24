@@ -53,10 +53,10 @@
 
       <div class="header-right">
         <nav class="nav-links d-none d-md-flex">
-          <a href="index.html" class="menu-nav_link active">Home</a>
+          <a href="index.html" class="menu-nav_link">Home</a>
           <a href="about-me.html" class="menu-nav_link">About me</a>
-          <a href="my-portfolio.html" class="menu-nav_link">My Portfolio</a>
-          <a href="contact-me.html" class="menu-nav_link">Contact me</a>
+          <a href="my portfolio.html" class="menu-nav_link">My Portfolio</a>
+          <a href="contact me.html" class="menu-nav_link active">Contact me</a>
           <a href="cv.html" class="menu-nav_link">CV</a>
         </nav>
         <div class="social-icons d-none d-md-flex">
@@ -99,18 +99,20 @@
           <nav class="nav">
             <ul class="menu-nav">
               <li class="menu-nav_item active">
-                <a href="index.html" class="menu-nav_link active">Home</a>
+                <a href="index.html" class="menu-nav_link">Home</a>
               </li>
               <li class="menu-nav_item">
                 <a href="about-me.html" class="menu-nav_link">About me</a>
               </li>
               <li class="menu-nav_item">
-                <a href="my-portfolio.html" class="menu-nav_link"
+                <a href="my portfolio.html" class="menu-nav_link"
                   >My Portfolio</a
                 >
               </li>
               <li class="menu-nav_item">
-                <a href="contact-me.html" class="menu-nav_link">Contact me</a>
+                <a href="contact me.html" class="menu-nav_link active"
+                  >Contact me</a
+                >
               </li>
 
               <li class="menu-nav_item">
@@ -126,30 +128,50 @@
         </div>
       </div>
     </header>
-
     <main>
-      <div class="home">
-        <div class="intro">
-          <h3>Hi, I am</h3>
-          <h1 class="home_name">Isabella Guerrini</h1>
-          <h3>UX/UI Designer Student</h3>
+      <h1>Contact me</h1>
+      <div class="form-cta row">
+        <div class="form col-12 col-md-6">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input
+              type="name"
+              class="form-control custom-input"
+              id="name"
+              placeholder="John Doe"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input
+              type="email"
+              class="form-control custom-input"
+              id="email"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control custom-input"
+              id="message"
+              rows="4"
+            ></textarea>
+          </div>
+          <div class="buttons d-grid d-sm-flex">
+            <a role="button" class="btn btn-primary" href="#">Submit</a>
+          </div>
         </div>
-        <div class="buttons d-grid d-sm-flex">
-          <a role="button" class="btn btn-primary" href="cv.html">View my CV</a>
-          <a role="button" class="btn btn-outline-primary" href="about-me.html"
-            >About me
-          </a>
+        <div class="cta col-12 col-md-6">
+          <i data-lucide="send"></i>
+          <h3>
+            I'm open to job opportunities <br />
+            and collaborative projects <br />
+            feel free to <strong>reach out!</strong>
+          </h3>
         </div>
       </div>
-
-      <quote>
-        <p>“It is never too late to be what you might have been.”</p>
-        <figcaption class="blockquote-footer">
-          <cite title="Source Title">George Eliot</cite>
-        </figcaption>
-      </quote>
     </main>
-
     <footer>
       <small>
         Designed &amp; Developed <br class="d-sm-none" />

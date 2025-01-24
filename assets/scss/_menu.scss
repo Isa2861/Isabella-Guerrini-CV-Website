@@ -2,7 +2,6 @@
   --bs-offcanvas-width: 75vw;
 
   background-color: var(--bg);
-  color: var(--text);
   padding: 0;
   margin: 0;
 
@@ -23,7 +22,13 @@
       padding: 0;
       margin: 0;
       font-size: 16px;
+
+      .active {
+      color: $primary;
+      }
     }
+
+ 
   }
   .social-icons {
     display: flex;
@@ -32,3 +37,14 @@
   }  
 }
 
+.header-right {
+display: flex;
+align-items: center;
+gap: 48px;
+.nav-links {
+  gap: 24px;
+  .active {
+    color: $primary;
+    }
+}
+}

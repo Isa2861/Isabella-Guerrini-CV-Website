@@ -1,0 +1,79 @@
+@import "vars";
+
+.mb-3 {
+  margin: 0 !important;
+  padding-bottom: 24px;
+}
+
+.form-cta {
+  gap: 48px;
+}
+
+.cta {
+  padding-top: 48px;
+  text-align: center;
+  width: fit-content;
+
+  .lucide {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 24px;
+  }
+}
+
+.form {
+  max-width: 500px;
+  h1 {
+    padding-bottom: 24px;
+  }
+}
+
+.d-grid {
+  gap: 16px;
+}
+
+.form-control {
+  border-radius: 0;
+}
+.custom-input {
+  border: none;
+  border-bottom: 2px solid $secondary;
+  background-color: transparent;
+  outline: none;
+  color: $text-dark;
+  font-size: 16px;
+  padding: 5px 0;
+
+  &:focus {
+    background-color: transparent;
+    border-bottom: 2px solid $primary;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: $secondary;
+  }
+
+  &:placeholder-shown + label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: $secondary;
+    transition: all 0.2s ease;
+  }
+
+  &:focus + label,
+  &:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: $primary;
+  }
+}
+
+label {
+  position: relative;
+  transition: all 0.2s ease;
+  color: $text-dark;
+  pointer-events: none;
+}
