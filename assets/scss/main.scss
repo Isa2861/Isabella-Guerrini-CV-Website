@@ -4,6 +4,46 @@
 @import "about-me";
 @import "contact-me";
 
+body {
+  --bs-body-bg: #{$bg-dark};
+  --bs-body-color: #{$text-dark};
+
+  .logo-black {
+    display: none;
+  }
+
+  &.light {
+    --bs-body-bg: #{$bg-light};
+    --bs-body-color: #{$text-light};
+
+    .logo-white {
+      display: none;
+    }
+
+    .logo-black {
+      display: unset;
+    }
+  }
+
+  font-size: 16px;
+  font-family: "Poppins";
+  font-weight: 400;
+  height: 100svh;
+  padding: 0px 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  z-index: 2;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px;
+}
+
 main {
   flex-grow: 1;
   display: flex;
@@ -12,16 +52,33 @@ main {
   padding: 48px 0px;
 }
 
+footer {
+  padding: 24px 0;
+  text-align: center;
+
+  small {
+    color: $secondary;
+  }
+}
+
+.logo-white,
+.logo-black {
+  height: 36px;
+  width: 36px;
+}
+
 .btn {
   border-radius: 20px;
   padding: 8px 24px;
   font-family: "Poppins";
   font-size: 16px;
+
   &-primary {
     background-color: $primary;
     color: $text-dark;
     border: $primary;
   }
+
   &-outline-primary {
     background-color: transparent;
     color: $primary;
@@ -30,46 +87,12 @@ main {
   }
 }
 
-body {
-  --bg: #{$bg-dark};
-  --bs-body-color: #{$text-dark};
-  .logo-black {
-    display: none;
-  }
-
-  &.light {
-    --bg: #{$bg-light};
-    --bs-body-color: #{$text-light};
-    .logo-white {
-      display: none;
-    }
-    .logo-black {
-      display: unset;
-    }
-  }
-  font-size: 16px;
-  font-family: "Poppins";
-  font-weight: 400;
-  background: var(--bg);
-  height: 100svh;
-  padding: 0px 2rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.logo-white {
-  height: 36px;
-  width: 36px;
-}
-
-.logo-black {
-  height: 36px;
-  width: 36px;
-}
-
 h1,
-.h1 h2,
-.h2 {
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
   font-weight: 700;
   font-family: "DM Sans";
   margin-bottom: 0;
@@ -87,8 +110,6 @@ h3,
 .h3 {
   font-size: 24px;
   font-weight: 400;
-  font-family: "DM Sans";
-  margin-bottom: 0;
 }
 
 a {
@@ -96,29 +117,8 @@ a {
   text-decoration: none;
 }
 
-hr {
-  color: var(--bs-body-color);
-  opacity: 0.5;
+p {
   margin: 0;
-}
-
-header {
-  z-index: 2;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 0px;
-}
-
-footer {
-  padding: 24px 0;
-  text-align: center;
-
-  small {
-    color: $secondary;
-  }
 }
 
 .lucide {
@@ -129,6 +129,7 @@ footer {
   padding: 8px;
 }
 
-.sun-btn, .moon-btn {
+.sun-btn,
+.moon-btn {
   cursor: pointer;
 }

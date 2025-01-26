@@ -1,23 +1,22 @@
 @import "vars";
 
-.mb-3 {
-  margin: 0 !important;
-  padding-bottom: 24px;
-}
-
 .form-cta {
-  gap: 48px;
+  row-gap: 48px;
 }
 
 .cta {
+  justify-self: flex-end;
   padding-top: 48px;
   text-align: center;
-  width: fit-content;
 
   .lucide {
     height: 80px;
     width: 80px;
     margin-bottom: 24px;
+  }
+
+  strong {
+    color: $accent;
   }
 }
 

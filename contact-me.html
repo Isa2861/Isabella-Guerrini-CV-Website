@@ -53,11 +53,11 @@
 
       <div class="header-right">
         <nav class="nav-links d-none d-md-flex">
-          <a href="index.html" class="menu-nav_link">Home</a>
-          <a href="about-me.html" class="menu-nav_link">About me</a>
-          <a href="my portfolio.html" class="menu-nav_link">My Portfolio</a>
-          <a href="contact me.html" class="menu-nav_link active">Contact me</a>
-          <a href="cv.html" class="menu-nav_link">CV</a>
+          <a href="index.html">Home</a>
+          <a href="about-me.html">About me</a>
+          <a href="Portfolio.html">Portfolio</a>
+          <a href="contact-me.html" class="active">Contact me</a>
+          <a href="cv.html">CV</a>
         </nav>
         <div class="social-icons d-none d-md-flex">
           <a href="#"><i data-lucide="linkedin"></i></a>
@@ -96,30 +96,23 @@
           ></i>
         </div>
         <div class="offcanvas-body">
-          <nav class="nav">
-            <ul class="menu-nav">
-              <li class="menu-nav_item active">
-                <a href="index.html" class="menu-nav_link">Home</a>
-              </li>
-              <li class="menu-nav_item">
-                <a href="about-me.html" class="menu-nav_link">About me</a>
-              </li>
-              <li class="menu-nav_item">
-                <a href="my portfolio.html" class="menu-nav_link"
-                  >My Portfolio</a
-                >
-              </li>
-              <li class="menu-nav_item">
-                <a href="contact me.html" class="menu-nav_link active"
-                  >Contact me</a
-                >
-              </li>
-
-              <li class="menu-nav_item">
-                <a href="cv.html" class="menu-nav_link">CV</a>
-              </li>
-            </ul>
-          </nav>
+          <ul class="menu-nav">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about-me.html">About me</a>
+            </li>
+            <li>
+              <a href="Portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a href="contact-me.html" class="active">Contact me</a>
+            </li>
+            <li>
+              <a href="cv.html">CV</a>
+            </li>
+          </ul>
 
           <div class="social-icons">
             <a href="#"><i data-lucide="linkedin"></i></a>
@@ -131,44 +124,46 @@
     <main>
       <h1>Contact me</h1>
       <div class="form-cta row">
-        <div class="form col-12 col-md-6">
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input
-              type="name"
-              class="form-control custom-input"
-              id="name"
-              placeholder="John Doe"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input
-              type="email"
-              class="form-control custom-input"
-              id="email"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea
-              class="form-control custom-input"
-              id="message"
-              rows="4"
-            ></textarea>
-          </div>
-          <div class="buttons d-grid d-sm-flex">
+        <div class="col-12 col-md-6">
+          <div class="form">
+            <div class="mb-4">
+              <label for="name" class="form-label">Your Name</label>
+              <input
+                type="name"
+                class="form-control custom-input"
+                id="name"
+                placeholder="John Doe"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="form-label">Your Email</label>
+              <input
+                type="email"
+                class="form-control custom-input"
+                id="email"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control custom-input"
+                id="message"
+                rows="4"
+              ></textarea>
+            </div>
             <a role="button" class="btn btn-primary" href="#">Submit</a>
           </div>
         </div>
         <div class="cta col-12 col-md-6">
-          <i data-lucide="send"></i>
-          <h3>
-            I'm open to job opportunities <br />
-            and collaborative projects <br />
-            feel free to <strong>reach out!</strong>
-          </h3>
+          <div>
+            <i data-lucide="send"></i>
+            <h3>
+              I'm open to job opportunities <br />
+              and collaborative projects. <br />
+              feel free to <strong>reach out!</strong>
+            </h3>
+          </div>
         </div>
       </div>
     </main>
