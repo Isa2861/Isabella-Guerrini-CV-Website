@@ -17,7 +17,7 @@
       flex-direction: column;
       gap: 24px;
       padding: 0;
-      font-size: 24px;
+      font-size: 16px;
 
       .active {
         color: $primary;
@@ -39,7 +39,9 @@
 
   .nav-links {
     gap: 24px;
-  
+    .nav-link:hover {
+      color: $primary;
+    }
     .active {
       color: $primary;
     }

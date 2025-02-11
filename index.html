@@ -40,28 +40,33 @@
         class="d-md-none"
       ></i>
 
-      <img
-        src="assets/img/logo-white.svg"
-        class="logo-white"
-        alt="My Logo White"
-      />
-      <img
-        src="assets/img/logo-black.svg"
-        class="logo-black"
-        alt="My Logo Black"
-      />
+      <a href="index.html"
+        ><img
+          src="assets/img/logo-white.svg"
+          class="logo-white"
+          alt="My Logo White" />
+        <img
+          src="assets/img/logo-black.svg"
+          class="logo-black"
+          alt="My Logo Black"
+      /></a>
 
       <div class="header-right">
         <nav class="nav-links d-none d-md-flex">
-          <a href="index.html" class="active">Home</a>
-          <a href="about-me.html">About me</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="contact-me.html">Contact me</a>
-          <a href="cv.html">CV</a>
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="about-me.html" class="nav-link">About me</a>
+          <a href="portfolio.html" class="nav-link">Portfolio</a>
+          <a href="contact-me.html" class="nav-link">Contact me</a>
+          <a href="cv.html" class="nav-link">CV</a>
         </nav>
         <div class="social-icons d-none d-md-flex">
-          <a href="#"><i data-lucide="linkedin"></i></a>
-          <a href="#"><i data-lucide="github"></i></a>
+          <a
+            href="https://www.linkedin.com/in/isabella-guerrini-673387231
+          "
+            class="social-icon"
+            ><i data-lucide="linkedin"></i
+          ></a>
+          <a href="#" class="social-icon"><i data-lucide="github"></i></a>
         </div>
         <div class="theme-btn">
           <div data-lucide="sun" class="sun-btn"></div>
@@ -78,16 +83,16 @@
         <div
           class="offcanvas-header justify-content-between align-items-center"
         >
-          <img
-            src="assets/img/logo-white.svg"
-            class="logo-white"
-            alt="My Logo White"
-          />
-          <img
-            src="assets/img/logo-black.svg"
-            class="logo-black"
-            alt="My Logo Black"
-          />
+          <a href="index.html"
+            ><img
+              src="assets/img/logo-white.svg"
+              class="logo-white"
+              alt="My Logo White" />
+            <img
+              src="assets/img/logo-black.svg"
+              class="logo-black"
+              alt="My Logo Black"
+          /></a>
           <i
             data-lucide="x"
             class="close-icon"
@@ -115,7 +120,12 @@
           </ul>
 
           <div class="social-icons">
-            <a href="#"><i data-lucide="linkedin"></i></a>
+            <a
+              href="https://www.linkedin.com/in/isabella-guerrini-673387231
+
+            "
+              ><i data-lucide="linkedin"></i
+            ></a>
             <a href="#"><i data-lucide="github"></i></a>
           </div>
         </div>
@@ -124,23 +134,32 @@
 
     <main>
       <div class="home">
-        <div class="intro">
-          <h3>Hi, I am</h3>
-          <h1 class="home_name">Isabella Guerrini</h1>
-          <h3>UX/UI Designer Student</h3>
+        <div class="home-intro">
+          <div class="intro">
+            <h3>Welcome to my website!</h3>
+            <h1 class="home_name">Isabella Guerrini</h1>
+            <h3>UX/UI Designer Student</h3>
+          </div>
+          <div class="buttons flex-sm-row">
+            <a role="button" class="btn btn-primary" href="cv.html"
+              >View my CV</a
+            >
+            <a
+              role="button"
+              class="btn btn-outline-primary"
+              href="about-me.html"
+              >About me
+            </a>
+          </div>
         </div>
-        <div class="buttons flex-sm-row">
-          <a role="button" class="btn btn-primary" href="cv.html">View my CV</a>
-          <a role="button" class="btn btn-outline-primary" href="about-me.html"
-            >About me
-          </a>
+        <div class="home-profile-photo">
+          <img src="/assets/img/photo-cv.png" alt="Profile Photo" />
         </div>
       </div>
-
-      <div class="quote">
-        <p>“It is never too late to be what you might have been.”</p>
+      <div class="quote p-md-5 p-sm-4 p-4">
+        <p>“Design is not just what it looks like and feels like. Design is how it works.”</p>
         <figcaption class="quote-footer">
-          <cite>— George Eliot</cite>
+          <cite>— Steve Jobs</cite>
         </figcaption>
       </div>
     </main>

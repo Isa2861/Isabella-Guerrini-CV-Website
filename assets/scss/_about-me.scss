@@ -1,8 +1,123 @@
-.interests {
+@import 'vars';
+
+.about-me {
   display: flex;
-  gap: 24px;
   flex-direction: column;
+  gap: var(--sections-gap);
+  padding: 48px;
+  padding-top: 0 !important;
+
+  @media (max-width: $breakpoint) {
+    padding: 24px;
+  }
+}
+
+.who-i-am {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (max-width: $breakpoint) {
+    gap: 16px;
+  }
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 0 0;
+
+    @media (max-width: $breakpoint) {
+      padding: 0;
+      gap: 24px;
+    }
+
+    img {
+      max-width: 500px;
+      height: auto;
+    }
+
+    p {
+      align-content: center;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      max-width: 400px;
+
+      strong {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.what-i-can-do {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media (max-width: $breakpoint) {
+    gap: 16px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    justify-content: space-between;
+
+    .skills-card {
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: var(--section-internal-gap);
+
+      p {
+        height: fit-content;
+        text-align: center;
+      }
+
+      .skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 150px;
+        gap: 16px;
+        padding: 24px;
+
+        .lucide {
+          padding: 0;
+          color: $primary;
+        }
+      }
+    }
+
+    .hard-skills,
+    .soft-skills {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: var(--section-internal-gap);
+    }
+  }
+}
+
+.what-i-like {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  text-align: center;
+
   .cards {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
@@ -13,85 +128,19 @@
   display: flex;
   align-items: center;
   max-width: 296px;
-  background-color: transparent;
-  border-color: $accent;
-  border-width: 2px;
+  background: linear-gradient(to top, $accent, var(--bs-body-bg) 90%);
+  border: transparent;
   text-align: center;
   padding: 24px;
   gap: 16px;
+  color: $text-dark;
+
   &-title {
     margin: 0;
   }
+
   .lucide {
     padding: 0;
-  }
-  strong {
     color: $accent;
-  }
-}
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  justify-content: space-between;
-}
-.hard-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.soft-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 130px;
-  gap: 16px;
-  .lucide {
-    padding: 0;
-  }
-}
-
-.card-transparent {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  p {
-    height: fit-content;
-    text-align: center;
-  }
-}
-
-
-.progress {
-  height: 8px;
-  background-color: $secondary;
-  .progress-bar {
-    background-color: $primary;
-    
-  }  
-}
-
-.presentation {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: center;
-  img {
-    height: 200px;
-    width: 200px;
-    padding: 50px;
-    margin: 0 100px;
-  }
-  p {
-    align-content: center;
   }
 }

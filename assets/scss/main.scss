@@ -3,10 +3,19 @@
 @import "menu";
 @import "about-me";
 @import "contact-me";
+@import "portfolio";
+@import "cv";
 
 body {
   --bs-body-bg: #{$bg-dark};
   --bs-body-color: #{$text-dark};
+  --sections-gap: 24px;
+  --section-internal-gap: 16px;
+
+  @media (min-width: $breakpoint) {
+    --sections-gap: 48px;
+    --section-internal-gap: 24px;
+  }
 
   .logo-black {
     display: none;
@@ -28,36 +37,59 @@ body {
   font-size: 16px;
   font-family: "Poppins";
   font-weight: 400;
-  height: 100svh;
-  padding: 0px 2rem;
+
   display: flex;
   flex-direction: column;
+  padding-top: 0;
 }
 
 header {
-  z-index: 2;
-  width: 100%;
-  height: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0px;
+
+  position: sticky;
+  top: 0;
+  background-color: var(--bs-body-bg);
+  z-index: 2;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 64px;
+  padding-right: 64px;
+
+  @media (max-width: $breakpoint) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 main {
-  flex-grow: 1;
   display: flex;
+  text-align: center;
+  align-items: center;
   flex-direction: column;
-  gap: 48px;
-  padding: 48px 0px;
+  gap: var(--sections-gap);
+  flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: $breakpoint) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
 footer {
-  padding: 24px 0;
+  padding-bottom: 80px;
+  padding-top: 80px;
   text-align: center;
-
   small {
     color: $secondary;
+  }
+  @media (max-width: $breakpoint) {
+    padding-bottom: 48px;
+    padding-top: 48px;
   }
 }
 
@@ -72,18 +104,29 @@ footer {
   padding: 8px 24px;
   font-family: "Poppins";
   font-size: 16px;
+  border: solid 2px $primary;
 
   &-primary {
     background-color: $primary;
     color: $text-dark;
-    border: $primary;
+    
+    --bs-btn-hover-bg: #{$primary-hover};
+    --bs-btn-hover-border-color: #{$primary-hover};
+    --bs-btn-active-bg: #{$primary};
+    --bs-btn-active-border-color: #{$primary-hover};
   }
 
   &-outline-primary {
     background-color: transparent;
     color: $primary;
-    border-color: $primary;
-    border-width: 2px;
+    
+
+    --bs-btn-hover-bg: #{transparent};
+    --bs-btn-hover-color: #{$primary-hover};
+    --bs-btn-hover-border-color: #{$primary-hover};
+    --bs-btn-active-bg: #{transparent};
+    --bs-btn-active-color: #{$primary};
+    --bs-btn-active-border-color: #{$primary-hover};
   }
 }
 
@@ -127,6 +170,9 @@ p {
   height: 48px;
   color: var(--bs-body-color);
   padding: 8px;
+  &:hover {
+    color: $accent;
+  }
 }
 
 .sun-btn,
