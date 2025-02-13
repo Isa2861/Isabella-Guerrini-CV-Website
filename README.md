@@ -1,4 +1,4 @@
-Isabella Guerrni | UX/UI Design Student
+ISABELLA GUERRINI | UX/UI DESIGN STUDENT
 
 Welcome to my online CV!
 
